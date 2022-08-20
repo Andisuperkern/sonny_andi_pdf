@@ -1,1 +1,1 @@
-# sonny_andi_pdf
+# Django based PDF converter
