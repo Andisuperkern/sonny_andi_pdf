@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  pdf:
+    build: .
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - type: bind
+        source: ../
+        target: /sonny_andi_pdf
