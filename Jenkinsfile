@@ -12,6 +12,8 @@ pipeline{
         stage('Pip install'){
             steps{
 
+                    sh 'python3 -m venv my_env'
+                    sh 'source my_env/bin/activate'
                     sh 'pip install Django==3.1.5'
                     sh 'pip install pytz==2017.2'
                     sh 'pip install django-crispy-forms'
@@ -22,7 +24,7 @@ pipeline{
         stage('Run Migrations'){
             steps{
 
-                    sh 'python3 manage.py runserver'
+                    sh 'python3 manage.py migrate'
 
             }
         }
