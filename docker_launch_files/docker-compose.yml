@@ -1,11 +1,14 @@
-version: "3.9"
+version: '3.9'
 services:
   pdf:
-    build: .
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
     ports:
-      - "8000:8000"
+    - "8000:8000"
 
     volumes:
-      - type: bind
-        source: ../
-        target: /sonny_andi_pdf
+    - type: bind
+      source: ../
+      target: /sonny_andi_pdf
