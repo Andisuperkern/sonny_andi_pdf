@@ -25,7 +25,7 @@ pipeline{
 
             }
         }
-        stage('Run Migrations'){
+        stage('Unit Testing'){
             steps{
 
                     sh 'python3 manage.py test sonny_andi_pdf'
