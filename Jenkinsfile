@@ -12,12 +12,7 @@ pipeline{
         stage('Pip install'){
             steps{
 
-                    sh 'python3 -m venv .venv'
-                    sh 'cd test_env/bin'
-                    sh 'pwd'
-                    sh 'ls -la'
-                    sh 'source .venv/bin/activate'
-                    sh 'pip install Django==3.1.5'
+                    sh 'pip install Django'
                     sh 'pip install pytz==2017.2'
                     sh 'pip install django-crispy-forms'
                     sh 'pip install djangorestframework'
