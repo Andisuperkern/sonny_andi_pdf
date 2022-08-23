@@ -14,6 +14,7 @@ pipeline{
 
                     sh 'python3 -m venv test_env'
                     sh 'cd test_env/bin'
+                    sh 'pwd'
                     sh 'ls -la'
                     sh 'source test_env/bin/activate'
                     sh 'pip install Django==3.1.5'
