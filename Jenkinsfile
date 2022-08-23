@@ -13,7 +13,6 @@ pipeline{
             steps{
 
                     sh 'pip install Django'
-                    sh 'pip install pytz==2017.2'
                     sh 'pip install django-crispy-forms'
                     sh 'pip install djangorestframework'
 
