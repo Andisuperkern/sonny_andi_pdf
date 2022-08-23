@@ -13,6 +13,7 @@ pipeline{
             steps{
 
                     sh 'python3 -m venv my_env'
+                    sh 'ls'
                     sh 'source my_env/bin/activate'
                     sh 'pip install Django==3.1.5'
                     sh 'pip install pytz==2017.2'
