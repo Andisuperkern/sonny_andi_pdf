@@ -1,1 +1,0 @@
-Hallo, das ist ein Commit + Merge test.
