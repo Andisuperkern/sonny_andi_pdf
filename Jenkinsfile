@@ -34,6 +34,7 @@ pipeline{
         }
         stage('Docker Deploy'){
             steps{
+                    sh 'cd ./docker_launch_files'
                     sh 'docker compose build'
                     sh 'docker compose up'
             }
