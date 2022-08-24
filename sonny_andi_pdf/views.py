@@ -4,7 +4,7 @@ from .services import add
 
 
 def prototype(request):
-    return HttpResponse("Hello World")
+    return HttpResponse("Tagesziel erreicht! Zeit für Bier.")
 
 def dummy_addition(request):
     a = 1
