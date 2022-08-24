@@ -14,7 +14,7 @@ pipeline{
 
                     sh 'pip install Django'
                     sh 'pip install django-crispy-forms'
-                    sh 'pip install djangorestframework'
+                    /* sh 'pip install djangorestframework' */
 
             }
         }
