@@ -37,8 +37,9 @@ pipeline{
                     sh 'ls'
                     dir('./docker_launch_files'){
                         sh 'ls'
+                        sh 'docker compose down'
                         sh 'docker compose build'
-                        sh 'docker compose up'
+                        sh 'docker compose up --detach'
                     }
 
             }
