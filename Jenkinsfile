@@ -32,5 +32,12 @@ pipeline{
 
             }
         }
+        stage('Docker Deploy'){
+            steps{
+
+                    sh 'python3 manage.py test sonny_andi_pdf'
+
+            }
+        }
     }
 }
