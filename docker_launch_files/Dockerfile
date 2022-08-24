@@ -11,7 +11,8 @@ RUN apt-get update -y &&\
 RUN pip install Django==3.1.5 \
                 pytz==2017.2 \
                 django-crispy-forms \
-                pytest==7.1.2
+                pytest==7.1.2 \
+                djangorestframework
                 
 WORKDIR /sonny_andi_pdf
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
