@@ -34,9 +34,9 @@ pipeline{
         }
         stage('Docker Deploy'){
             steps{
-
-                    sh 'python3 manage.py test sonny_andi_pdf'
-
+                    sh 'docker-compose down'
+                    sh 'docker-compose build'
+                    sh 'docker-compose up'
             }
         }
     }
