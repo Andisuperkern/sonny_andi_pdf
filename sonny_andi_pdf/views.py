@@ -16,8 +16,3 @@ def dummy_addition(request):
 # /home
 def home_view(request):
     return render(request, 'sonny_andi_pdf/home.html')
-
-# C:\projects\sonny_andi_pdf\templates\sonny_andi_pdf\home.html
-
-def mayela_view(request):
-    return render(request, 'mayela.html')
