@@ -12,7 +12,7 @@ services:
     volumes:
     - type: bind
       source: ../
-      target: /sonny_andi_pdf
+      target: /sonny_andi_pdf 
 
   test:
     build:
@@ -24,5 +24,5 @@ services:
       source: ../
       target: /sonny_andi_pdf
 
-    command: pytest -v -s
+    command: /bin/bash
 

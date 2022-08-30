@@ -34,8 +34,13 @@ pipeline{
         }
         stage('Docker Deploy'){
             steps{
-
-                    sh 'python3 manage.py test sonny_andi_pdf'
+                    sh 'ls'
+                    dir('./docker_launch_files'){
+                        sh 'ls'
+                        sh 'docker compose down'
+                        sh 'docker compose build'
+                        sh 'docker compose up --detach'
+                    }
 
             }
         }
