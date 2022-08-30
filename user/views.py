@@ -1,14 +1,15 @@
-from django.shortcuts import render
-
 # Create your views here.
 
-from django.shortcuts import render, redirect
-from .forms import NewUserForm
-from django.contrib.auth import login, logout
 from django.contrib import messages
 from django.contrib.auth import login, authenticate
+from django.contrib.auth import logout
 from django.contrib.auth.forms import AuthenticationForm
+from django.shortcuts import render, redirect
 
+from .forms import NewUserForm
+
+
+# https://ordinarycoders.com/blog/article/django-user-register-login-logout
 
 def register_request(request):
     if request.method == "POST":
